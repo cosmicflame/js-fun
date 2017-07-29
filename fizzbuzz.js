@@ -49,9 +49,9 @@ console.log("Test suite passing: " + [
   if (result === true) {
     return true;
   } else {
-    console.log("Test failed: " + (index+1));
-    console.log("Test: " + array[index].toString());
-    console.log("Result: " + result);
+    console.log(`Test failed: ${index+1}`);
+    console.log(`Test: ${array[index].toString()}`);
+    console.log(`Result: ${result}`);
     return false;
   }})
 )
