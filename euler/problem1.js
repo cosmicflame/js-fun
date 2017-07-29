@@ -2,14 +2,10 @@
 
 const testData = [];
 
-
-// In hindsight, this is really ugly
-// Why create a dataset only to throw half of it away?
-// I could - and should - have been filtering in the initial loop
+let sum = 0;
 for (let i = 1; i < 1000; i++) {
-  testData.push(i);
+  if (i % 3 === 0 || i % 5 === 0) sum += i
 }
 
-
-console.log(testData.filter(x => x % 3 === 0 || x % 5 === 0).reduce((sum, val) => sum + val))
+console.log(sum);
 
